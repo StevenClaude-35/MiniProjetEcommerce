@@ -1,0 +1,13 @@
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\bin\Debug\netcoreapp3.1\GestionCommercial.exe
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\bin\Debug\netcoreapp3.1\GestionCommercial.deps.json
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\bin\Debug\netcoreapp3.1\GestionCommercial.runtimeconfig.json
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\bin\Debug\netcoreapp3.1\GestionCommercial.runtimeconfig.dev.json
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\bin\Debug\netcoreapp3.1\GestionCommercial.dll
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\bin\Debug\netcoreapp3.1\GestionCommercial.pdb
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\obj\Debug\netcoreapp3.1\GestionCommercial.csproj.AssemblyReference.cache
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\obj\Debug\netcoreapp3.1\GestionCommercial.AssemblyInfoInputs.cache
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\obj\Debug\netcoreapp3.1\GestionCommercial.AssemblyInfo.cs
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\obj\Debug\netcoreapp3.1\GestionCommercial.csproj.CoreCompileInputs.cache
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\obj\Debug\netcoreapp3.1\GestionCommercial.dll
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\obj\Debug\netcoreapp3.1\GestionCommercial.pdb
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\obj\Debug\netcoreapp3.1\GestionCommercial.genruntimeconfig.cache

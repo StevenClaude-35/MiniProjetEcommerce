@@ -6,20 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "GestionCommercial/1.0.0": {
-        "dependencies": {
-          "Entites": "1.0.0",
-          "Services": "1.0.0"
-        },
-        "runtime": {
-          "GestionCommercial.dll": {}
-        }
-      },
-      "Entites/1.0.0": {
-        "runtime": {
-          "Entites.dll": {}
-        }
-      },
       "Services/1.0.0": {
         "dependencies": {
           "Entites": "1.0.0"
@@ -27,21 +13,21 @@
         "runtime": {
           "Services.dll": {}
         }
+      },
+      "Entites/1.0.0": {
+        "runtime": {
+          "Entites.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "GestionCommercial/1.0.0": {
+    "Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "Entites/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -11,3 +11,8 @@ D:\projet_csUdemy\GestionCommercial\GestionCommercial\obj\Debug\netcoreapp3.1\Ge
 D:\projet_csUdemy\GestionCommercial\GestionCommercial\obj\Debug\netcoreapp3.1\GestionCommercial.dll
 D:\projet_csUdemy\GestionCommercial\GestionCommercial\obj\Debug\netcoreapp3.1\GestionCommercial.pdb
 D:\projet_csUdemy\GestionCommercial\GestionCommercial\obj\Debug\netcoreapp3.1\GestionCommercial.genruntimeconfig.cache
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\bin\Debug\netcoreapp3.1\Entites.dll
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\bin\Debug\netcoreapp3.1\Services.dll
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\bin\Debug\netcoreapp3.1\Entites.pdb
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\bin\Debug\netcoreapp3.1\Services.pdb
+D:\projet_csUdemy\GestionCommercial\GestionCommercial\obj\Debug\netcoreapp3.1\GestionCommercial.csproj.CopyComplete

@@ -18,6 +18,8 @@ namespace GestionCommercial
             Console.WriteLine("2 - Ajouter un client ");
             Console.WriteLine("3 - Supprimer un client");
             Console.WriteLine("4 - Rechercher un client");
+            Console.WriteLine("5 - Enregistrer");
+            Console.WriteLine("6 - Trier");
             Console.WriteLine("Q - Quitter");
             Console.Write("\t\n Donnez votre choix : ");
         }
@@ -43,6 +45,13 @@ namespace GestionCommercial
                     case "4":
                         RechercherClientParNom();
                         break;
+                    case "5":
+                        Enregistrement();
+                        break;
+                    case "6":
+                        trier();
+                        break;
+
                     default:
                         break;
                 }
@@ -51,6 +60,16 @@ namespace GestionCommercial
             } while (choixOperation !="Q");
            
             
+        }
+
+        private static void trier()
+        {
+            clientService.Trier();
+        }
+
+        private static void Enregistrement()
+        {
+            clientService.Enregistrer();
         }
 
         private static void SupprimerClient()

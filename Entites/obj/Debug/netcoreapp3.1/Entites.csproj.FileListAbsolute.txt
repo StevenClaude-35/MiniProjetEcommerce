@@ -1,0 +1,9 @@
+D:\projet_csUdemy\GestionCommercial\Entites\bin\Debug\netcoreapp3.1\Entites.deps.json
+D:\projet_csUdemy\GestionCommercial\Entites\bin\Debug\netcoreapp3.1\Entites.dll
+D:\projet_csUdemy\GestionCommercial\Entites\bin\Debug\netcoreapp3.1\Entites.pdb
+D:\projet_csUdemy\GestionCommercial\Entites\obj\Debug\netcoreapp3.1\Entites.csproj.AssemblyReference.cache
+D:\projet_csUdemy\GestionCommercial\Entites\obj\Debug\netcoreapp3.1\Entites.AssemblyInfoInputs.cache
+D:\projet_csUdemy\GestionCommercial\Entites\obj\Debug\netcoreapp3.1\Entites.AssemblyInfo.cs
+D:\projet_csUdemy\GestionCommercial\Entites\obj\Debug\netcoreapp3.1\Entites.csproj.CoreCompileInputs.cache
+D:\projet_csUdemy\GestionCommercial\Entites\obj\Debug\netcoreapp3.1\Entites.dll
+D:\projet_csUdemy\GestionCommercial\Entites\obj\Debug\netcoreapp3.1\Entites.pdb

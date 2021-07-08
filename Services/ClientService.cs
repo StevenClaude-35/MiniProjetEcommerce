@@ -3,9 +3,12 @@ using GestionCommercial.Entites.Enums;
 using GestionCommercial.Services.Exceptions;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Xml.Serialization;
 
 namespace GestionCommercial.Services
 {
@@ -15,38 +18,44 @@ namespace GestionCommercial.Services
 
         public ClientService()
         {
-            ClientCollection = new List<Client>();
+            //Chargement des clients enregister
+            this.ClientCollection = this.Ouvrir();
+            if (this.ClientCollection == null)
+            {
+                ClientCollection = new List<Client>();
 
-            ClientCollection.Add(new Client()
-            {
-                Nom = "Madani",
-                Prenom = "Ali",
-                Civilite = Civilites.Homme,
-                ComptePrepaye = new ComptePrepaye() { SoldePrepaye = 100 },
-                DateNaissance = new DateTime(2000, 2, 1),
-                Email = "Madani.Ali@yahoo.fr",
-                Nationnalite = Nationnalites.Marocaine
-            });
-            ClientCollection.Add(new Client()
-            {
-                Nom = "chami",
-                Prenom = "Moad",
-                Civilite = Civilites.Homme,
-                ComptePrepaye = new ComptePrepaye() { SoldePrepaye = 20 },
-                DateNaissance = new DateTime(2000, 1, 1),
-                Email = "Chami.Moad@yahoo.fr",
-                Nationnalite = Nationnalites.Belge
-            });
-            ClientCollection.Add(new Client()
-            {
-                Nom = "Madani",
-                Prenom = "Mouna",
-                Civilite = Civilites.Femme,
-                ComptePrepaye = new ComptePrepaye() { SoldePrepaye = 40 },
-                DateNaissance = new DateTime(2000, 2, 1),
-                Email = "Madani.mouna@yahoo.fr",
-                Nationnalite = Nationnalites.Français
-            });
+                ClientCollection.Add(new Client()
+                {
+                    Nom = "Madani",
+                    Prenom = "Ali",
+                    Civilite = Civilites.Homme,
+                    ComptePrepaye = new ComptePrepaye() { SoldePrepaye = 100 },
+                    DateNaissance = new DateTime(2000, 2, 1),
+                    Email = "Madani.Ali@yahoo.fr",
+                    Nationnalite = Nationnalites.Marocaine
+                });
+                ClientCollection.Add(new Client()
+                {
+                    Nom = "chami",
+                    Prenom = "Moad",
+                    Civilite = Civilites.Homme,
+                    ComptePrepaye = new ComptePrepaye() { SoldePrepaye = 20 },
+                    DateNaissance = new DateTime(2000, 1, 1),
+                    Email = "Chami.Moad@yahoo.fr",
+                    Nationnalite = Nationnalites.Belge
+                });
+                ClientCollection.Add(new Client()
+                {
+                    Nom = "Madani",
+                    Prenom = "Mouna",
+                    Civilite = Civilites.Femme,
+                    ComptePrepaye = new ComptePrepaye() { SoldePrepaye = 40 },
+                    DateNaissance = new DateTime(2000, 2, 1),
+                    Email = "Madani.mouna@yahoo.fr",
+                    Nationnalite = Nationnalites.Français
+                });
+            }
+           
         }
 
         public void Ajouter(Client client)
@@ -75,6 +84,36 @@ namespace GestionCommercial.Services
                 throw new AjouterClientException(message);
             }
             this.ClientCollection.Add(client);
+        }
+
+        public List<Client>  Ouvrir()
+        {
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Client>));
+            string fileName = "Client.xml";
+            if (File.Exists(fileName))
+            {
+                StreamReader streamReader = new StreamReader("Clients.xml");
+
+                List<Client> liste_Clients = (List<Client>)xmlSerializer.Deserialize(streamReader);
+                streamReader.Close();
+
+                return liste_Clients;
+            }
+            else
+                return null;
+        }
+
+        public void Enregistrer()
+        {
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Client>));
+            StreamWriter streamWriter = new StreamWriter("Client.xml");
+            xmlSerializer.Serialize(streamWriter, this.ClientCollection);
+            streamWriter.Close();
+        }
+
+        public  void Trier()
+        {
+            this.ClientCollection.Sort();
         }
 
         public void Supprimer(string nomClient)

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfClient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Client>
+    <Nom>Madani</Nom>
+    <Prenom>Ali</Prenom>
+    <DateNaissance>2000-02-01T00:00:00</DateNaissance>
+    <Email>Madani.Ali@yahoo.fr</Email>
+    <Civilite>Homme</Civilite>
+    <Nationnalite>Marocaine</Nationnalite>
+    <ComptePrepaye>
+      <SoldePrepaye>100</SoldePrepaye>
+    </ComptePrepaye>
+  </Client>
+  <Client>
+    <Nom>chami</Nom>
+    <Prenom>Moad</Prenom>
+    <DateNaissance>2000-01-01T00:00:00</DateNaissance>
+    <Email>Chami.Moad@yahoo.fr</Email>
+    <Civilite>Homme</Civilite>
+    <Nationnalite>Belge</Nationnalite>
+    <ComptePrepaye>
+      <SoldePrepaye>20</SoldePrepaye>
+    </ComptePrepaye>
+  </Client>
+  <Client>
+    <Nom>Madani</Nom>
+    <Prenom>Mouna</Prenom>
+    <DateNaissance>2000-02-01T00:00:00</DateNaissance>
+    <Email>Madani.mouna@yahoo.fr</Email>
+    <Civilite>Femme</Civilite>
+    <Nationnalite>Français</Nationnalite>
+    <ComptePrepaye>
+      <SoldePrepaye>40</SoldePrepaye>
+    </ComptePrepaye>
+  </Client>
+</ArrayOfClient>

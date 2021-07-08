@@ -5,7 +5,7 @@ using System.Text;
 
 namespace GestionCommercial.Entites
 {
-    public class Client
+    public class Client:IComparable
     {
         public string Nom{ get; set; }
         public string Prenom { get; set; }
@@ -37,6 +37,12 @@ namespace GestionCommercial.Entites
 
                 return le_resume;
             }
+        }
+
+        public int CompareTo(object obj)
+        {
+            Client client = obj as Client;
+            return String.Compare(this.Nom, client.Nom);
         }
 
         public override string ToString()
